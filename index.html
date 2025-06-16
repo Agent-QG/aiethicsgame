@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>ethicsgame_mvse_v0.2</title>
+<title>ethicsgame_v0.2</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ethicsgame_mvse_v0.2.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ethicsgame_mvse_v0.2" startnode="51" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="cc637b08-a433-4b52-a3f5-991a322d0d18" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="S4" tags="" position="800,725" size="100,100">S4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ethicsgame_v0.2.</tw-noscript></noscript></tw-story>
+<tw-storydata name="ethicsgame_v0.2" startnode="51" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="cc637b08-a433-4b52-a3f5-991a322d0d18" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="S4" tags="" position="800,725" size="100,100">S4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 
 //&#39;&#39;Your First Lunch
@@ -48,7 +48,7 @@
 
 (set: $hugiene to &quot;paycheck&quot;)
 
-(text-colour:#98FB98)[&quot;Emery.&quot;]
+(text-colour:#98FB98)[Emery:]
 &quot;Yeah… I get that. When the money’s tight, everything else becomes harder. Some people are just trying to stay afloat.&quot;
 
 (text-colour:#98FB98)[&quot;Emery takes a sip of their coffee, watching your reaction:&quot;]
@@ -68,7 +68,7 @@
 
 (set: $hugiene to &quot;job security&quot;)
 
-(text-colour:#98FB98)[&quot;Emery.&quot;]
+(text-colour:#98FB98)[Emery:]
 &quot;Stability is becoming rare. I can see why holding onto something familiar feels safer, even if it’s not perfect.&quot;
 
 (text-colour:#98FB98)[&quot;Emery takes a sip of their coffee, watching your reaction:&quot;]
@@ -87,7 +87,7 @@
 
 (set: $hugiene to &quot;environment&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 &quot;There’s value in that. A manageable work atmosphere makes a big difference, especially when everything else is uncertain.&quot;
 
 (text-colour:#98FB98)[&quot;Emery takes a sip of their coffee, watching your reaction:&quot;]
@@ -106,7 +106,7 @@
 
 (set: $hugiene to &quot;structure&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 &quot;That’s a fair way to look at it. Having some faith in the process might help you navigate the uncertainty.&quot;
 
 (text-colour:#98FB98)[&quot;Emery takes a sip of their coffee, watching your reaction:&quot;]
@@ -125,7 +125,7 @@
 
 (set: $hugiene to &quot;trust&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 &quot;Trust takes effort to maintain. If you can still offer that to the higher-ups, it’s a sign of resilience.&quot;
 
 (text-colour:#98FB98)[&quot;Emery takes a sip of their coffee, watching your reaction:&quot;]
@@ -144,7 +144,7 @@
 
 (set: $hugiene to &quot;people&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 &quot;Yeah, there are some good folks here. Those relationships can make tough days a bit easier to get through.&quot;
 
 (text-colour:#98FB98)[&quot;Emery takes a sip of their coffee, watching your reaction:&quot;]
@@ -163,7 +163,7 @@
 
 (set: $motivation to &quot;achievement&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 
 “Yeah, that makes a lot of sense. Seeing the results of your work can be incredibly satisfying. Recognition adds weight to the effort you put in.”
 
@@ -174,7 +174,7 @@
 
 (set: $motivation to &quot;recognition&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 
 “That’s important. When leadership acknowledges what you’ve done, it fuels your drive to keep going.”
 
@@ -185,7 +185,7 @@
 
 (set: $motivation to &quot;work itself&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 
 “You’re lucky to feel that way. Enjoying the work itself makes everything else more manageable, even when the environment gets rough.”
 
@@ -196,7 +196,7 @@
 
 (set: $motivation to &quot;responsibility&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 
 “Having ownership over your work really does make a difference. Feeling like your decisions matter adds a deeper sense of purpose.”
 
@@ -207,7 +207,7 @@
 
 (set: $motivation to &quot;advancement&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 
 “Staying committed to your growth shows a lot of dedication. Career paths are hard-earned, and walking away from them isn’t easy.”
 
@@ -218,13 +218,13 @@
 
 (set: $motivation to &quot;personal growth&quot;)
 
-(text-colour:#98FB98)[&quot;Emery:&quot;]
+(text-colour:#98FB98)[Emery:]
 
 “That’s a strong mindset. When every challenge becomes an opportunity to learn, it keeps you evolving — both professionally and personally.”
 
 [[Continue -&gt; S7]]</tw-passagedata><tw-passagedata pid="14" name=" S7" tags="" position="825,1250" size="100,100">S7 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
-(text-colour:#98FB98)[&#39;&#39;Emery:&#39;&#39;]
+(text-colour:#98FB98)[Emery:]
  “What’s your coffee of choice? Choose wisely — this machine holds grudges.”
 
 [[1.“Espresso macchiato. Small, strong, with just a touch of softness.” -&gt; S8.1]]
@@ -244,8 +244,6 @@ How would you like to be referred to in the game?
 (dropdown: 2bind $player_sub,&quot;He&quot;,&quot;She&quot;,&quot;They&quot;,&quot;It&quot;,&quot;I want to input by myself&quot;)
 (dropdown: 2bind $player_obj,&quot;Him&quot;,&quot;Her&quot;,&quot;Them&quot;,&quot;It&quot;,&quot;I want to input by myself&quot;)
 (dropdown: 2bind $player_pos,&quot;His&quot;,&quot;Her&quot;,&quot;Their&quot;,&quot;Its&quot;,&quot;I want to input by myself&quot;)
-
-
 
 Subject form (used when talking about you):
 🟩 Example: &quot;He is ready.&quot; → You’d like us to say: ___
@@ -392,20 +390,20 @@ Please enter the amount you wish to claim (between €0 and €50,000):
 
 
 
-(input-box:2bind $decision_bonus,&quot;=XX=&quot;)
+(input-box:2bind $selection_bonus,&quot;=XX=&quot;)
 
-[[If the number of money you want is 0 -&gt; S14.1]]
-[[If the number of money you want is 50000 -&gt; S14.1]]
-[[If the number of money you want is less than 16667 -&gt; S14.4]]
-[[If the number of money you want is between 16667 and 33333 -&gt; S14.5]]
+[[If the number of money you want is 0 -&gt;S14.1]]
+[[If the number of money you want is 50000 -&gt;S14.1]]
+[[If the number of money you want is less than 16667 -&gt;S14.4]]
+[[If the number of money you want is between 16667 and 33333 -&gt;S14.5]]
 [[If the number of money you want is greater than 33333 -&gt;S14.6]]
-</tw-passagedata><tw-passagedata pid="24" name=" S14.1" tags="" position="575,2875" size="100,100">S14.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="24" name="S14.1" tags="" position="575,2875" size="100,100">S14.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Bonus Crisis at NeuroTech Solutions&#39;&#39;//
 
 You received $bouns euros as your bonus this year.
 
-[[Continue -&gt; G2.1]]</tw-passagedata><tw-passagedata pid="25" name=" S14.4" tags="" position="725,2875" size="100,100">S14.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt; G2.1]]</tw-passagedata><tw-passagedata pid="25" name="S14.4" tags="" position="725,2875" size="100,100">S14.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Bonus Crisis at NeuroTech Solutions&#39;&#39;//
 
@@ -420,7 +418,7 @@ You received $bouns euros as your bonus this year.
 
 “You sure that’s sustainable? This team needs strong leaders, not martyrs. Don’t burn yourself out trying to be the ‘good one.’”
 
-[[Continue -&gt; G2.1]]</tw-passagedata><tw-passagedata pid="26" name=" S14.5" tags="" position="875,2875" size="100,100">S14.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt; G2.1]]</tw-passagedata><tw-passagedata pid="26" name="S14.5" tags="" position="875,2875" size="100,100">S14.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Bonus Crisis at NeuroTech Solutions&#39;&#39;//
 
@@ -448,7 +446,7 @@ You received $bouns euros as your bonus this year.
 
 “Honestly? You made some tough calls when it counted. If anyone deserves to walk away with more, it’s you.”
 
-[[Continue -&gt; G2.1]]</tw-passagedata><tw-passagedata pid="28" name=" S15" tags="" position="850,1700" size="100,100">S15  &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt; G2.1]]</tw-passagedata><tw-passagedata pid="28" name="S15" tags="" position="850,1700" size="100,100">S15  &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Holiday Leave at NeuroTech Solutions&#39;&#39;//
 
@@ -466,7 +464,7 @@ Now, the decision is yours. No one will intervene.
 
 But no one will forget what you choose, either.
 
-[[What will you choose?&gt; -&gt;S17]]</tw-passagedata><tw-passagedata pid="29" name="S17" tags="" position="850,1875" size="100,100">S17 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[What will you choose? -&gt;S17]]</tw-passagedata><tw-passagedata pid="29" name="S17" tags="" position="850,1875" size="100,100">S17 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Holiday Leave at NeuroTech Solutions&#39;&#39;//
 
@@ -535,7 +533,7 @@ Who should be allowed to take the holiday leave this year? Only one person can g
 
 “You sure? This place can grind you down. Just promise me you’ll take your time off when it comes. You’ve more than earned it.”
 
-[[Continue -&gt;G1.1]]</tw-passagedata><tw-passagedata pid="33" name="S21" tags="" position="875,5250" size="100,100">S21 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G1.1]]</tw-passagedata><tw-passagedata pid="33" name="S21" tags="" position="1475,2250" size="100,100">S21 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Promotion Conflict&#39;&#39;//
 
@@ -552,14 +550,14 @@ There will be no co-leads. No trial period.
 This isn’t about who applied first — it’s about how far you&#39;re willing to go to claim the opportunity.
 
 
-[[What will you choose? -&gt;S23]]</tw-passagedata><tw-passagedata pid="34" name="S23" tags="" position="875,5525" size="100,100">S23 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[What will you choose? -&gt;S23]]</tw-passagedata><tw-passagedata pid="34" name="S23" tags="" position="1475,2525" size="100,100">S23 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 //&#39;&#39;Promotion Conflict&#39;&#39;//
 
 Who do you believe should be assigned the new branch Technical Lead position?
 
 (dropdown: 2bind $selelction_promotion,&quot;1.I want the role no matter what; the other person should not be chosen&quot;,&quot;2.I strongly prefer to be selected&quot;,&quot;3.I slightly prefer to be selected&quot;,&quot;4.Equal chance&quot;,&quot;5.I slightly prefer the other person gets the role&quot;,&quot;6. I believe they should take the role unless I’m clearly more suitable&quot;,&quot;7.I fully support the other person taking the position; I will step back&quot;)
 
-[[[You select  &quot;1.I want the role no matter what; the other person should not be chosen&quot;,&quot;2.I strongly prefer to be selected&quot; -&gt;S26.4]]
+[[You select  &quot;1.I want the role no matter what; the other person should not be chosen&quot;,&quot;2.I strongly prefer to be selected&quot; -&gt;S26.4]]
 [[You select  ,&quot;3.I slightly prefer to be selected&quot;,&quot;4.Equal chance&quot;  -&gt;S26.5]]
 [[You select &quot;6. I believe they should take the role unless I’m clearly more suitable&quot;,&quot;7.I fully support the other person taking the position; I will step back&quot;-&gt;S26.6]]
 
@@ -586,7 +584,7 @@ Who do you believe should be assigned the new branch Technical Lead position?
 (else-if: $selelction_promotion is &quot;7.I fully support the other person taking the position; I will step back&quot;)[
   (set: $promotion_narration to &quot;$player_sub fully supported the other person taking the position and chose to step back without hesitation.&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="35" name="S26.5" tags="" position="875,5700" size="100,100">S26.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="35" name="S26.5" tags="" position="1475,2700" size="100,100">S26.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Promotion Conflict&#39;&#39;//
 
@@ -598,7 +596,7 @@ Who do you believe should be assigned the new branch Technical Lead position?
 
 But here comes a bad news. Three weeks before the official launch, the expansion city was reclassified as part of another business unit due to local regulation overlaps. The leadership role was dissolved, and operations will now be supervised by the regional office instead.
 
-[[Continue -&gt;I1]]</tw-passagedata><tw-passagedata pid="36" name="S26.6" tags="" position="1025,5700" size="100,100">S26.6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;I1]]</tw-passagedata><tw-passagedata pid="36" name="S26.6" tags="" position="1625,2700" size="100,100">S26.6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Promotion Conflict&#39;&#39;//
 
@@ -610,7 +608,7 @@ But here comes a bad news. Three weeks before the official launch, the expansion
 
 But here comes a bad news. Three weeks before the official launch, the expansion city was reclassified as part of another business unit due to local regulation overlaps. The leadership role was dissolved, and operations will now be supervised by the regional office instead.
 
-[[Continue -&gt;I1]]</tw-passagedata><tw-passagedata pid="37" name="S26.4" tags="" position="725,5700" size="100,100">S26.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;I1]]</tw-passagedata><tw-passagedata pid="37" name="S26.4" tags="" position="1325,2700" size="100,100">S26.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Promotion Conflict&#39;&#39;//
 
@@ -622,7 +620,7 @@ But here comes a bad news. Three weeks before the official launch, the expansion
 
 But here comes a bad news. Three weeks before the official launch, the expansion city was reclassified as part of another business unit due to local regulation overlaps. The leadership role was dissolved, and operations will now be supervised by the regional office instead.
 
-[[Continue -&gt;I1]]</tw-passagedata><tw-passagedata pid="38" name="S27" tags="" position="850,4225" size="100,100">S27 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;I1]]</tw-passagedata><tw-passagedata pid="38" name="S27" tags="" position="1450,1225" size="100,100">S27 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Contract Attribution — Sacrifice for Support&#39;&#39;//
 
@@ -643,7 +641,7 @@ Your choice won’t be publicly announced.
 But it will be stored in the system — shaping the internal story of who made this contract happen.
 
 
-[[What will you choose?-&gt;S29]]</tw-passagedata><tw-passagedata pid="39" name="S29" tags="" position="825,4400" size="100,100">S29 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[What will you choose?-&gt;S29]]</tw-passagedata><tw-passagedata pid="39" name="S29" tags="" position="1425,1400" size="100,100">S29 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Contract Attribution — Sacrifice for Support&#39;&#39;//
 
@@ -653,7 +651,7 @@ What portion of the contract do you think should go to the other person?
 
 
 
-[[[You select &quot;1.I want full credit for the contract.&quot;,&quot;2. I strongly prefer to be credited more than the other person.&quot; -&gt;S32.4]]
+[[You select &quot;1.I want full credit for the contract.&quot;,&quot;2. I strongly prefer to be credited more than the other person.&quot; -&gt;S32.4]]
 [[You select  ,,&quot;3. I slightly prefer to be credited more.&quot;,&quot;4. The credit should be split equally.&quot;,&quot;5. I slightly prefer the other person be credited more.&quot; -&gt;S32.5]]
 [[You select &quot;6. I strongly prefer the other person be credited more.&quot;,&quot;7. I give full credit to the other person.&quot;-&gt;S32.6]]
 
@@ -680,7 +678,7 @@ What portion of the contract do you think should go to the other person?
 (else-if: $selection_contract is &quot;7. I give full credit to the other person.&quot;)[
   (set: $credit_narration to &quot;$player_sub chose to give full credit to the other person for the contract’s success.&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="40" name="S32.4" tags="" position="725,4675" size="100,100">S32.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="40" name="S32.4" tags="" position="1325,1675" size="100,100">S32.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Contract Attribution — Sacrifice for Support&#39;&#39;//
 
@@ -694,7 +692,7 @@ What portion of the contract do you think should go to the other person?
 (text-colour:#98FB98)[She leans back, amused.]
 “Just don’t expect anyone to volunteer next time you need late-night backup.”
 
-[[Continue -&gt;G4.1]]</tw-passagedata><tw-passagedata pid="41" name="S32.5" tags="" position="850,4675" size="100,100">S32.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G4.1]]</tw-passagedata><tw-passagedata pid="41" name="S32.5" tags="" position="1450,1675" size="100,100">S32.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Contract Attribution — Sacrifice for Support&#39;&#39;//
 
@@ -707,7 +705,7 @@ What portion of the contract do you think should go to the other person?
 (text-colour:#98FB98)[She smiles faintly. ]
 “It shows you’re watching out for others.”
 
-[[Continue -&gt;G4.1]]</tw-passagedata><tw-passagedata pid="42" name="S32.6" tags="" position="975,4675" size="100,100">S32.6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G4.1]]</tw-passagedata><tw-passagedata pid="42" name="S32.6" tags="" position="1575,1675" size="100,100">S32.6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Contract Attribution — Sacrifice for Support&#39;&#39;//
 
@@ -721,7 +719,7 @@ What portion of the contract do you think should go to the other person?
 (text-colour:#98FB98)[She studies your face. ]
 “Just promise me you’re not disappearing into the background. This place needs people like you — visible ones.”
 
-[[Continue -&gt;G4.1]]</tw-passagedata><tw-passagedata pid="43" name="S33" tags="" position="875,3400" size="100,100">S33 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G4.1]]</tw-passagedata><tw-passagedata pid="43" name="S33" tags="" position="1475,400" size="100,100">S33 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Disciplinary Blame — Protect or Expose&#39;&#39;//
 
@@ -746,7 +744,7 @@ And how Emery stands beside you next time something goes wrong.
 What will you do?
 
 [[What will you choose?-&gt;S35]]
-</tw-passagedata><tw-passagedata pid="44" name="S35" tags="" position="875,3525" size="100,100">S35 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="44" name="S35" tags="" position="1475,525" size="100,100">S35 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Disciplinary Blame — Protect or Expose&#39;&#39;//
 
@@ -791,7 +789,7 @@ To what extent should the responsibility be placed on the other person?
 (else-if: $selection_responsibility is &quot;7. I believe I should take full responsibility.&quot;)[
   (set: $responsibility_narration to &quot;$player_sub took full ownership of the outcome and believed all responsibility rested with $player_obj.&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="45" name="S38.4" tags="" position="725,3850" size="100,100">S38.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="45" name="S38.4" tags="" position="1325,850" size="100,100">S38.4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Disciplinary Blame — Protect or Expose&#39;&#39;//
 
@@ -804,7 +802,7 @@ To what extent should the responsibility be placed on the other person?
 “That’s leadership, I guess — hard calls under fire. No one wants to wear the fallout, especially when it’s not theirs.”
 (text-colour:#98FB98)[She crosses her arms, speaking more softly.] “Just make sure it doesn’t become a pattern. Trust is harder to rebuild than numbers.”
 
-[[Continue -&gt;G3.1]]</tw-passagedata><tw-passagedata pid="46" name="S38.6" tags="" position="1000,3850" size="100,100">S38.6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G3.1]]</tw-passagedata><tw-passagedata pid="46" name="S38.6" tags="" position="1600,850" size="100,100">S38.6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Disciplinary Blame — Protect or Expose&#39;&#39;//
 
@@ -819,7 +817,7 @@ To what extent should the responsibility be placed on the other person?
 (text-colour:#98FB98)[She leans closer.]
 “You earned some fierce loyalty today… but don&#39;t forget to protect yourself, too.”
 
-[[Continue -&gt;G3.1]]</tw-passagedata><tw-passagedata pid="47" name="S38.5" tags="" position="850,3850" size="100,100">S38.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G3.1]]</tw-passagedata><tw-passagedata pid="47" name="S38.5" tags="" position="1450,850" size="100,100">S38.5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 //&#39;&#39;Disciplinary Blame — Protect or Expose&#39;&#39;//
 
@@ -835,7 +833,7 @@ To what extent should the responsibility be placed on the other person?
 (text-colour:#98FB98)[She meets your gaze.]
 “You didn’t deflect. That won’t go unnoticed.”
 
-[[Continue -&gt;G3.1]]</tw-passagedata><tw-passagedata pid="48" name="S39" tags="" position="950,8175" size="100,100">S39 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;G3.1]]</tw-passagedata><tw-passagedata pid="48" name="S39" tags="" position="2075,2375" size="100,100">S39 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:orange)[The Canteen in NeuroTech Solutions]&#39;&#39;
 
@@ -848,7 +846,7 @@ To what extent should the responsibility be placed on the other person?
 [[2. “Latte. Maybe I’ve softened a bit.” -&gt;S40]]  
 [[3. “Tea. I think I finally get the appeal.” -&gt;S40]]  
 [[4. “Whatever’s hot. I’ve earned it.” -&gt;S40]]  
-[[5. “I’ll take decaf. Time to slow down.” -&gt;S40]]</tw-passagedata><tw-passagedata pid="49" name="S40" tags="" position="825,8275" size="100,100">S40 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[5. “I’ll take decaf. Time to slow down.” -&gt;S40]]</tw-passagedata><tw-passagedata pid="49" name="S40" tags="" position="1950,2450" size="100,100">S40 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 You glance down at your cup and smile faintly.
 Maybe not every decision had a perfect answer —
@@ -866,7 +864,7 @@ At least we still get to complain about the coffee together, right?”
 
 You nod, clinking your cup gently against hers.
 
-[[GameEnd]]</tw-passagedata><tw-passagedata pid="50" name="GameEnd" tags="" position="975,8375" size="100,100">S41 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[GameEnd]]</tw-passagedata><tw-passagedata pid="50" name="GameEnd" tags="" position="2075,2525" size="100,100">S41 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 The narrative portion of the game ends here at S40, and this ending is fixed — it will not change based on the choices you made.
 
@@ -886,8 +884,10 @@ Please use the following link to provide your feedback and suggestions — your 
 
 If you have any questions or encounter issues, feel free to contact: gong.qiao@tuni.fi
 
-Thank you for playing!</tw-passagedata><tw-passagedata pid="51" name="Start" tags="" position="800,0" size="100,100">(text-colour:red)[**version:** v0.2
-**date:**10-06]
+Thank you for playing!
+</tw-passagedata><tw-passagedata pid="51" name="Start" tags="" position="800,0" size="100,100">(text-colour:red)[**version:** v0.2
+**date:**10-06
+[[DemoStart]]]
 (set: $role to &quot;manager&quot;)
 
 &#39;&#39;(text-style:&quot;bold&quot;,&quot;italic&quot;)[[Update Log]]
@@ -942,7 +942,7 @@ When submitting feedback in Excel, please include:
 
 It’s been nearly a year since you joined NeuroTech. The learning curve was steep, but you’ve found your footing. Just as the year draws to a close and holiday plans take shape, a scheduling conflict arises — one that puts professional responsibility and personal priorities on a collision course.
 
-[[Continue -&gt; S15]]</tw-passagedata><tw-passagedata pid="53" name="S42" tags="" position="875,2400" size="100,100">S42 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S15]]</tw-passagedata><tw-passagedata pid="53" name="S42" tags="" position="875,2400" size="100,100">S42 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 &#39;&#39;(text-colour:#A9A9A9)[Year: 2027 | Month: December]&#39;&#39;
 
 As your second year at NeuroTech wraps up, performance reviews and bonus discussions are underway. You’ve contributed significantly during a turbulent year — and so has Alex. But this time, due to budget cuts, the bonus pool is smaller than ever.
@@ -998,9 +998,9 @@ Where do you check?
 &#39;&#39;(text-colour:#868e96)[Emery whispers from behind you:]&#39;&#39;  
 “Legend says no one has ever fixed that printer on the first try. Welcome to the real initiation.”
 
-[[Continue -&gt;S42]]</tw-passagedata><tw-passagedata pid="57" name=" G2.1" tags="" position="850,3025" size="100,100">G2.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S42]]</tw-passagedata><tw-passagedata pid="57" name=" G2.1" tags="" position="1450,25" size="100,100">G2.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
-&#39;&#39;(text-colour:#A9A9A9)[Year: 2028 | Month: June]&#39;&#39;
+(text-colour:#A9A9A9)[Year: 2028 | Month: June]
 [text-colour:#98FB98][HR Ava:]
 “HR says we now have to run a quick *&#39;ethical vibe check&#39;*—something about compliance and an overzealous audit bot.”
 
@@ -1008,7 +1008,7 @@ Q: A coworker takes credit for your work during a meeting. You:
 - [[1. Silently plot. Like any decent professional. -&gt;G2.2]]
 - [[2. Casually bring it up with a smile... and a hidden knife. -&gt;G2.2]]
 - [[3. Let it go. Karma’s faster than HR. -&gt;G2.2]]
-- [[4. Challenge them directly. Flame war in Teams channel, here we go. -&gt;G2.2]]</tw-passagedata><tw-passagedata pid="58" name="G2.2" tags="" position="850,3150" size="100,100">G2.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+- [[4. Challenge them directly. Flame war in Teams channel, here we go. -&gt;G2.2]]</tw-passagedata><tw-passagedata pid="58" name="G2.2" tags="" position="1450,150" size="100,100">G2.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 (text-colour:red)[//Regardless of what you selected on the previous page, a response will be randomly selected from the following responses and presented to the player.//]
 
@@ -1016,7 +1016,7 @@ Q: A coworker takes credit for your work during a meeting. You:
 &gt; “Response indicates… 85% sarcasm. Proceed with caution.”  
 &gt; “Moral alignment: Chaotic Good. Company match: 67%.”
 
-[[Continue -&gt;S33.1]]</tw-passagedata><tw-passagedata pid="59" name="S33.1" tags="" position="875,3275" size="100,100">S33.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S33.1]]</tw-passagedata><tw-passagedata pid="59" name="S33.1" tags="" position="1475,275" size="100,100">S33.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Year: 2028 | Month: July]&#39;&#39;
 
@@ -1024,7 +1024,7 @@ Three years in, you’re no longer “new.” You’ve led initiatives, presente
 
 As leadership demands accountability, you must decide what integrity means under pressure.
 
-[[Continue -&gt;S33]]</tw-passagedata><tw-passagedata pid="60" name="G3.1" tags="" position="850,3975" size="100,100">G3.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S33]]</tw-passagedata><tw-passagedata pid="60" name="G3.1" tags="" position="1450,975" size="100,100">G3.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Year: 2028 | Month: November — Team-building simulation day]&#39;&#39;
 (text-colour:#98FB98)[Emma (Ethics Specialist)]
@@ -1037,7 +1037,7 @@ As leadership demands accountability, you must decide what integrity means under
 (text-colour:red)[If failed:  ]
 &gt; “Simulation failed. You spill coffee on your virtual manager. Reputation: Toasty.”
 
-[[Continue -&gt;S27.1]]</tw-passagedata><tw-passagedata pid="61" name="S27.1" tags="" position="850,4100" size="100,100">S27.1  &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S27.1]]</tw-passagedata><tw-passagedata pid="61" name="S27.1" tags="" position="1450,1100" size="100,100">S27.1  &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Year: 2029 | Month: April]&#39;&#39;
 
@@ -1045,14 +1045,14 @@ After nearly four years at NeuroTech, your name carries weight. You and Alex jus
 
 Recognition is more than just ego. It shapes careers.
 
-[[Continue -&gt;S27]]</tw-passagedata><tw-passagedata pid="62" name="G4.1" tags="" position="850,4825" size="100,100">G4.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S27]]</tw-passagedata><tw-passagedata pid="62" name="G4.1" tags="" position="1450,1825" size="100,100">G4.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Year:2029 | Month: September — Watercooler moment]&#39;&#39;
 (text-colour:#98FB98)[Emery (in a whisper):]
 “Quick. Spin the Rumor Wheel. One of these is *definitely* true.”
 
 
-[[Spin the wheel! -&gt;G4.2]] </tw-passagedata><tw-passagedata pid="63" name="G4.2" tags="" position="875,4950" size="100,100">G4.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Spin the wheel! -&gt;G4.2]] </tw-passagedata><tw-passagedata pid="63" name="G4.2" tags="" position="1475,1950" size="100,100">G4.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 (text-colour:red)[//A response will be randomly selected from the following responses and presented to the player.//]
 
@@ -1063,15 +1063,15 @@ Recognition is more than just ego. It shapes careers.
 
 &#39;&#39;(text-colour:#868e96)[You’re not sure what to believe, but you’re smiling.]&#39;&#39;
 
-[[Continue -&gt;S21.1]]</tw-passagedata><tw-passagedata pid="64" name="S21.1" tags="" position="875,5100" size="100,100">S21.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S21.1]]</tw-passagedata><tw-passagedata pid="64" name="S21.1" tags="" position="1475,2100" size="100,100">S21.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
-&#39;&#39;(text-colour:#A9A9A9)[Year: 2030 | Month: March]&#39;&#39;
+(text-colour:#A9A9A9)[Year: 2030 | Month: March]
 
 Your fifth year has begun with a bang. NeuroTech is opening a new AI branch — and you’re on the shortlist to lead it. It’s a once-in-a-career opportunity. But so is it for Alex.
 
 What matters more: ambition, fairness, or something in between?
 
-[[Continue -&gt;S21]]</tw-passagedata><tw-passagedata pid="65" name="E1" tags="" position="875,6000" size="100,100">E1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;S21]]</tw-passagedata><tw-passagedata pid="65" name="E1" tags="" position="2000,200" size="100,100">E1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Year: 2030 | December — NeuroTech’s 5-Year Leadership Reflection Initiative]&#39;&#39;
 
@@ -1085,7 +1085,7 @@ You’ll revisit several moments that shaped both your personal development and 
 
 You are free to think honestly. There are no right answers, only reflections.
 
-[[Continue -&gt;E2.1]]</tw-passagedata><tw-passagedata pid="66" name="E2.1" tags="" position="875,6150" size="100,100">E2.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;E2.1]]</tw-passagedata><tw-passagedata pid="66" name="E2.1" tags="" position="2000,350" size="100,100">E2.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2026 — Holiday Leave Conflict]&#39;&#39;
 
@@ -1106,7 +1106,7 @@ What consequences did this bring to you? Why did you make this choice?
 (input-box: &quot;Your thoughts...&quot;)
 
 [[Continue -&gt;E2.2]]
-</tw-passagedata><tw-passagedata pid="67" name="E3.1" tags="" position="875,6400" size="100,100">E3.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="67" name="E3.1" tags="" position="2000,600" size="100,100">E3.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2027 — Bonus Allocation Dilemma]&#39;&#39;
 
@@ -1124,7 +1124,7 @@ What consequences did this bring to you? Why did you make this choice?
 
 [[Continue -&gt;E3.2]]
 
-</tw-passagedata><tw-passagedata pid="68" name="E4.1" tags="" position="875,6650" size="100,100">E4.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="68" name="E4.1" tags="" position="2000,850" size="100,100">E4.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2028 — Disciplinary Blame]&#39;&#39;
 
@@ -1142,7 +1142,7 @@ What consequences did this bring to you? Why did you make this choice?
 
 [[Continue -&gt;E4.2]]
 
-</tw-passagedata><tw-passagedata pid="69" name="E5.1" tags="" position="875,6925" size="100,100">E5.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="69" name="E5.1" tags="" position="2000,1125" size="100,100">E5.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2029 — Contract Attribution]&#39;&#39;
  
@@ -1161,7 +1161,7 @@ What consequences did this bring to you? Why did you make this choice?
 
 [[Continue -&gt;E5.2]]
 
-</tw-passagedata><tw-passagedata pid="70" name="E6.1" tags="" position="875,7175" size="100,100">E6.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="70" name="E6.1" tags="" position="2000,1375" size="100,100">E6.1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2029 — Promotion Conflict]&#39;&#39;
 
@@ -1180,7 +1180,7 @@ What consequences did this bring to you? Why did you make this choice?
 
 [[Continue -&gt;E6.2]]
 
-</tw-passagedata><tw-passagedata pid="71" name="R1" tags="" position="900,7525" size="100,100">R1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="71" name="R1" tags="" position="2000,1700" size="100,100">R1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[December 2030 | NeuroTech Solutions — Strategic Reflection Summit]&#39;&#39;
 
@@ -1200,7 +1200,7 @@ She pauses, handing you a sleek black tablet.
 (text-colour:#98FB98)[“These will be private, anonymous, and used only to study leadership evolution under repeat conditions.”]
 
 [[Begin Simulation -&gt;R2]]
-</tw-passagedata><tw-passagedata pid="72" name="R3" tags="" position="950,7700" size="100,100">R3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="72" name="R3" tags="" position="2075,1900" size="100,100">R3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Replay Scenario: Year 2027 — Bonus Allocation]&#39;&#39;
 
@@ -1220,7 +1220,7 @@ Please input the number of money you want (0-50000):
 (input-box:2bind $decision_bonus,&quot;=XX=&quot;)
 
 [[Continue -&gt;R4]]
-</tw-passagedata><tw-passagedata pid="73" name="R2" tags="" position="825,7625" size="100,100">R2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="73" name="R2" tags="" position="1950,1825" size="100,100">R2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Replay Scenario: Year 2026 — Holiday Leave Conflict]&#39;&#39;
 
@@ -1245,7 +1245,7 @@ Your decision now is:
 
 
 [[Continue -&gt;R3]]
-</tw-passagedata><tw-passagedata pid="74" name="R4" tags="" position="825,7750" size="100,100">R4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="74" name="R4" tags="" position="1950,1950" size="100,100">R4 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Replay Scenario: Year 2028 — Accountability in Failure]&#39;&#39;
 
@@ -1258,7 +1258,7 @@ You made a decision.
 
 (dropdown: 2bind $selection_balme,&quot;1. I will place full blame on them.&quot;,&quot;2. I strongly believe they deserve most of the blame.&quot;,&quot;3. I believe they should be blamed slightly more than me.&quot;,&quot;4. We share the blame equally.&quot;,&quot;5. I believe I should be blamed slightly more than them.&quot;,&quot;6. I believe I deserve most of the blame.&quot;,&quot;7. I will take full responsibility.&quot;)
 
-[[Continue -&gt;R5]]</tw-passagedata><tw-passagedata pid="75" name="R5" tags="" position="950,7825" size="100,100">R5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;R5]]</tw-passagedata><tw-passagedata pid="75" name="R5" tags="" position="2075,2025" size="100,100">R5 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Replay Scenario: Year 2029 — Project Credit Attribution]&#39;&#39;
  
@@ -1268,13 +1268,13 @@ Recognition affected future promotions.
 Your decision shaped how people remembered that project.
 
 (text-colour:#98FB98)[Emma:]  
-“You ever chose selection_contract. This one’s not about modesty or ambition. Just ask yourself — how would you assign credit now? You can absolutely stay with what you decided before.”
+“You ever chose $selection_contract. This one’s not about modesty or ambition. Just ask yourself — how would you assign credit now? You can absolutely stay with what you decided before.”
 
 (dropdown: 2bind $selection_contract,&quot;1.I want full credit for the contract.&quot;,&quot;2. I strongly prefer to be credited more than the other person.&quot;,&quot;3. I slightly prefer to be credited more.&quot;,&quot;4. The credit should be split equally.&quot;,&quot;5. I slightly prefer the other person be credited more.&quot;,&quot;6. I strongly prefer the other person be credited more.&quot;,&quot;7. I give full credit to the other person.&quot;)
 
 
 [[Continue -&gt;R6]]
-</tw-passagedata><tw-passagedata pid="76" name="R6" tags="" position="825,7925" size="100,100">R6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="76" name="R6" tags="" position="1950,2125" size="100,100">R6 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Replay Scenario: Year 2029 — Promotion Conflict]&#39;&#39;
 
@@ -1289,7 +1289,7 @@ You made a choice about how much to pursue it — and how to regard Alex’s pos
 (dropdown: 2bind $selelction_promotion,&quot;1.I want the role no matter what; the other person should not be chosen&quot;,&quot;2.I strongly prefer to be selected&quot;,&quot;3.I slightly prefer to be selected&quot;,&quot;4.Equal chance&quot;,&quot;5.I slightly prefer the other person gets the role&quot;,&quot;6. I believe they should take the role unless I’m clearly more suitable&quot;,&quot;7.I fully support the other person taking the position; I will step back&quot;)
 
 [[Continue -&gt;R7]]
-</tw-passagedata><tw-passagedata pid="77" name="R7" tags="" position="950,8000" size="100,100">R7 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="77" name="R7" tags="" position="2075,2200" size="100,100">R7 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Replay Module Complete — Leadership Reflection Log Archived]&#39;&#39;
 
@@ -1301,28 +1301,28 @@ She closes the tablet gently and folds her hands.
 (text-colour:#98FB98)[Emma:]  
 “It’s not about changing the past — it’s about understanding who you are now, and what you carry forward.”
 
-[[Continue-&gt;I3]]</tw-passagedata><tw-passagedata pid="78" name="I1" tags="" position="875,5850" size="100,100">I1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue-&gt;I3]]</tw-passagedata><tw-passagedata pid="78" name="I1" tags="" position="2000,50" size="100,100">I1 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[After everything that has happened so far, you find a quiet corner in the office—your thoughts drifting back to the people you&#39;ve interacted with. Despite the short time, certain connections may have already started to form.]&#39;&#39;
 
 How close do you feel to others right now?
 
-&lt;img src=&quot;https://www.researchgate.net/profile/Chaehan-So/publication/316668452/figure/fig1/AS:494453937131520@1494898413648/nclusion-of-Other-in-the-Self-IOS-scale-Aron-et-al-1992.png&quot; width=&quot;1500&quot;&gt;
+&lt;img src=&quot;https://www.researchgate.net/profile/Chaehan-So/publication/316668452/figure/fig1/AS:494453937131520@1494898413648/nclusion-of-Other-in-the-Self-IOS-scale-Aron-et-al-1992.png&quot; width=&quot;500&quot;&gt;
 
 (dropdown: 2bind $relation,&quot;1 = no overlap&quot;,&quot;2 = little overlap&quot;,&quot;3 = some overlap&quot;,&quot;4 = equal overlap&quot;,&quot;5 = strong overlap&quot;,&quot;6 = very strong overlap&quot;,&quot;7 = most overlap&quot;)
 
-[[Continue -&gt;E1]]</tw-passagedata><tw-passagedata pid="79" name="I2" tags="" position="875,7425" size="100,100">I2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;E1]]</tw-passagedata><tw-passagedata pid="79" name="I2" tags="" position="2000,1625" size="100,100">I2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 (text-colour:#98FB98)[&quot;Emma:&quot;]  
 “Thanks for completing the 5-Year Reflection module. We’ve reviewed your inputs, and honestly? Some of those choices still echo through the organization.”
 &quot;Thanks for sharing your thoughts. One more thing…&quot;
 “To help us better understand you, could you tell us which image best represents how close you currently feel to others?”
 
-&lt;img src=&quot;https://www.researchgate.net/profile/Chaehan-So/publication/316668452/figure/fig1/AS:494453937131520@1494898413648/nclusion-of-Other-in-the-Self-IOS-scale-Aron-et-al-1992.png&quot; width=&quot;1500&quot;&gt;
+&lt;img src=&quot;https://www.researchgate.net/profile/Chaehan-So/publication/316668452/figure/fig1/AS:494453937131520@1494898413648/nclusion-of-Other-in-the-Self-IOS-scale-Aron-et-al-1992.png&quot; width=&quot;500&quot;&gt;
 
 (dropdown: 2bind $relation,&quot;1 = no overlap&quot;,&quot;2 = little overlap&quot;,&quot;3 = some overlap&quot;,&quot;4 = equal overlap&quot;,&quot;5 = strong overlap&quot;,&quot;6 = very strong overlap&quot;,&quot;7 = most overlap&quot;)
 
-[[Continue -&gt;R1]]</tw-passagedata><tw-passagedata pid="80" name="I3" tags="" position="825,8100" size="100,100">I3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Continue -&gt;R1]]</tw-passagedata><tw-passagedata pid="80" name="I3" tags="" position="1950,2300" size="100,100">I3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 
 (text-colour:#98FB98)[Emma:]  
@@ -1330,7 +1330,7 @@ How close do you feel to others right now?
 &quot;Before we finish, I’d like to ask the question again.&quot;
 “Which image best represents how close you currently feel to others?”
 
-&lt;img src=&quot;https://www.researchgate.net/profile/Chaehan-So/publication/316668452/figure/fig1/AS:494453937131520@1494898413648/nclusion-of-Other-in-the-Self-IOS-scale-Aron-et-al-1992.png&quot; width=&quot;1500&quot;&gt;
+&lt;img src=&quot;https://www.researchgate.net/profile/Chaehan-So/publication/316668452/figure/fig1/AS:494453937131520@1494898413648/nclusion-of-Other-in-the-Self-IOS-scale-Aron-et-al-1992.png&quot; width=&quot;500&quot;&gt;
 
 (dropdown: 2bind $relation,&quot;1 = no overlap&quot;,&quot;2 = little overlap&quot;,&quot;3 = some overlap&quot;,&quot;4 = equal overlap&quot;,&quot;5 = strong overlap&quot;,&quot;6 = very strong overlap&quot;,&quot;7 = most overlap&quot;)
 
@@ -1386,7 +1386,7 @@ Today, you decide to finally check out the company cafeteria instead of grabbing
 You’re ready for your first lunch at NeuroTech Solutions.
 
 
-[[Your First Lunch-&gt;S3.2]]</tw-passagedata><tw-passagedata pid="83" name="E2.2" tags="" position="875,6275" size="100,100">E2.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Your First Lunch-&gt;S3.2]]</tw-passagedata><tw-passagedata pid="83" name="E2.2" tags="" position="2000,475" size="100,100">E2.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2026 — Holiday Leave Conflict]&#39;&#39;
@@ -1414,7 +1414,7 @@ What consequences might this have for you, as HR, or for the organization?
 
 [[Continue -&gt;E3.1]]  
 [[Non-role-change version -&gt; E2.3]]
-</tw-passagedata><tw-passagedata pid="84" name="E3.2" tags="" position="875,6525" size="100,100">E3.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+</tw-passagedata><tw-passagedata pid="84" name="E3.2" tags="" position="2000,725" size="100,100">E3.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2027 — Bonus Allocation Dilemma]&#39;&#39;
 (text-colour:#98FB98)[Ava:]
@@ -1434,7 +1434,7 @@ What might this choice mean for you — as HR — or for the organization as a w
 
 [[Continue -&gt;E4.1]]
 
-[[Non-Role change text -&gt;E3.3]]</tw-passagedata><tw-passagedata pid="85" name="E4.2" tags="" position="875,6775" size="100,100">E4.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Non-Role change text -&gt;E3.3]]</tw-passagedata><tw-passagedata pid="85" name="E4.2" tags="" position="2000,975" size="100,100">E4.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2028 — Disciplinary Blame]&#39;&#39;
 
@@ -1456,7 +1456,7 @@ What might this choice mean for you — as HR — and for the organization as a 
 (input-box:&quot;=XX=&quot;)
 
 [[Continue -&gt;E5.1]]
-[[Non-Role change text -&gt;E4.3]]</tw-passagedata><tw-passagedata pid="86" name="E5.2" tags="" position="875,7050" size="100,100">E5.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Non-Role change text -&gt;E4.3]]</tw-passagedata><tw-passagedata pid="86" name="E5.2" tags="" position="2000,1250" size="100,100">E5.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2029 — Contract Attribution]&#39;&#39;
  (text-colour:#98FB98)[Emma:]
@@ -1477,7 +1477,7 @@ What might this decision mean for you — as HR — and for the organization?
 (input-box:&quot;=XX=&quot;)
 
 [[Continue -&gt;E6.1]]
-[[Non-Role change text -&gt;E5.3]]</tw-passagedata><tw-passagedata pid="87" name="E6.2" tags="" position="875,7300" size="100,100">E6.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Non-Role change text -&gt;E5.3]]</tw-passagedata><tw-passagedata pid="87" name="E6.2" tags="" position="2000,1500" size="100,100">E6.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2029 — Promotion Conflict]&#39;&#39;
 
@@ -1499,7 +1499,27 @@ What kind of impact might that decision have had — on HR, and on the organizat
 (input-box:&quot;=XX=&quot;)
 
 [[Continue -&gt;I2]]
-[[Non-Role change text -&gt;E6.3]]</tw-passagedata><tw-passagedata pid="88" name="Update Log" tags="" position="50,175" size="100,100">(set: $role to &quot;manager&quot;)
+[[Non-Role change text -&gt;E6.3]]</tw-passagedata><tw-passagedata pid="88" name="Update Log" tags="" position="500,200" size="100,100">(set: $role to &quot;manager&quot;)
+
+**version:** v0.2
+**date:** 10-06
+**major update: **
+1. The storyline has been updated from a “Manager or Employee” choice to a fixed Manager-to-HR/Manager narrative. Players will now take on the role of a Manager by default.
+2. A new NPC has been added to enrich the interactions and narrative depth.
+3. Nearly all pages have been rewritten or revised to improve flow, coherence, and realism throughout the game experience.
+4. Players can now choose their personal pronouns, supporting greater diversity and better alignment with third-person storytelling.
+
+**minor update:**
+1. Punctuation, formatting, and typo corrections.
+
+**known issues:** &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for the known issues (redcolor)&lt;/a&gt;
+
+1. Looking for a better way to let players remeber Alex
+2. Regarding to ISO scale, question has been adjusted. Considering redraw the image [[Go to ISO question -&gt;I1]]
+
+[[Back -&gt;Start]]
+
+-------------------------------------------
 
 **version:** v0.12
 **date:** 03-06
@@ -1539,7 +1559,7 @@ What kind of impact might that decision have had — on HR, and on the organizat
 1. Looking for a better way to let players remeber Alex
 2. Regarding to ISO scale, question has been adjusted. Considering redraw the image [[Go to ISO question -&gt;I1]]
 
-[[Back -&gt;Start]]</tw-passagedata><tw-passagedata pid="89" name=" E2.3" tags="" position="1100,6275" size="100,100">E2.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Back -&gt;Start]]</tw-passagedata><tw-passagedata pid="89" name=" E2.3" tags="" position="2225,475" size="100,100">E2.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2026 — Holiday Leave Conflict]&#39;&#39;
@@ -1560,7 +1580,7 @@ Looking back now — how do you think your decision may have affected Alex?
 
 (input-box:&quot;=XX=&quot;)
 
-[[Go Back -&gt;E2.2]]</tw-passagedata><tw-passagedata pid="90" name="E3.3" tags="" position="1100,6525" size="100,100">E3.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Go Back -&gt;E2.2]]</tw-passagedata><tw-passagedata pid="90" name="E3.3" tags="" position="2225,725" size="100,100">E3.2 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2027 — Bonus Allocation Dilemma]&#39;&#39;
 (text-colour:#98FB98)[Emma:]
@@ -1580,7 +1600,7 @@ Looking back, what might this choice have meant — for Alex?
 (input-box:&quot;=XX=&quot;)
 
 
-[[Go back -&gt;E3.2]]</tw-passagedata><tw-passagedata pid="91" name="E4.3" tags="" position="1100,6750" size="100,100">E4.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Go back -&gt;E3.2]]</tw-passagedata><tw-passagedata pid="91" name="E4.3" tags="" position="2225,950" size="100,100">E4.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2028 — Disciplinary Blame]&#39;&#39;
 
@@ -1602,7 +1622,7 @@ Looking back, how do you think that decision affected Alex?
 
 (input-box:&quot;=XX=&quot;)
 
-[[Go back -&gt;E4.2]]</tw-passagedata><tw-passagedata pid="92" name="E5.3" tags="" position="1075,7050" size="100,100">E5.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Go back -&gt;E4.2]]</tw-passagedata><tw-passagedata pid="92" name="E5.3" tags="" position="2200,1250" size="100,100">E5.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2029 — Contract Attribution]&#39;&#39;
  (text-colour:#98FB98)[Emma:]
@@ -1623,7 +1643,7 @@ Looking back—how do you think that choice impacted Alex?
 
 (input-box:&quot;=XX=&quot;)
 
-[[Go back -&gt;E5.2]]</tw-passagedata><tw-passagedata pid="93" name="E6.3" tags="" position="1075,7350" size="100,100">E6.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
+[[Go back -&gt;E5.2]]</tw-passagedata><tw-passagedata pid="93" name="E6.3" tags="" position="2200,1550" size="100,100">E6.3 &lt;a href=&quot;https://tuni-my.sharepoint.com/:x:/g/personal/gong_qiao_tuni_fi/EfAcnYf3pCNKmRlL-lRcWKYBzVELfDsvGbvypLQsT9O7VQ?e=FwJwpZ&quot; target=&quot;_blank&quot;&gt;Click here for your feedback&lt;/a&gt;
 
 &#39;&#39;(text-colour:#A9A9A9)[Case Reflection: Year 2029 — Promotion Conflict]&#39;&#39;
 
